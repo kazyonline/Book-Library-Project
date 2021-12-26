@@ -27,12 +27,9 @@ function displayBook(){
      delete myLibrary[p.id];
      button.style.display = 'none';
      div.style.display = 'none';
-   }
-   
+   }   
 
    div.appendChild(button);
-  
-   
    document.body.appendChild(div);   
 
   }   
@@ -45,10 +42,7 @@ function addBookToLibrary() {
   let b = author.value
   let c = page_no.value;  
   var newBook = new Book(a,b,c);
-  myLibrary.push(newBook);
-
-      
- 
+  myLibrary.push(newBook);       
 }
 
 
@@ -56,7 +50,7 @@ function addBookToLibrary() {
 function showForm(){
   let button = document.querySelector('.form-popup');
   title.value = "";
-  author.value = ""
+  author.value = "";
   page_no.value = "";
   button.style.display = 'block';
 }
