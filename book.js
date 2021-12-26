@@ -8,13 +8,7 @@ class Book {
   }
 }
 
-/*function addBookToLibrary() {
-  let a = prompt('Please provide:title,author,pages');
-  let b = a.split(",");
-  var newBook = new Book(b[0],b[1],b[2]);
-  myLibrary.push(newBook);
- 
-}*/
+
 
 function displayBook(){
   
