@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="book.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="form-popup" id="myForm">
+        <form action="" method="get" class="form-container">
+                
+            <label for="title">Enter book title: </label>
+            <input type="text" name="title" id="title" required>
+            
+            <label for="author">Enter book author: </label>
+            <input type="text" name="author" id="author" required>
+            
+            <label for="page_no">Enter name of pages: </label>
+            <input type="text" name="page_no" id="page_no" required>
+    
+            <input type="submit" value="Submit!" onclick="addBookToLibrary(); closeForm(); return false">
+            
+        </form>
+    </section>
+
+   <div class="fixed">
+    <button   onclick="showForm()"> New book</button>
+    <button   onclick="displayBook()"> Display book</button>
+  </div>
+    
+</body>
+</html>
